@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #f2ca50;
+  --color-primary-container: #d4af37;
+  --color-primary-fixed: #ffe088;
+  --color-primary-fixed-dim: #e9c349;
+  --color-on-primary: #3c2f00;
+  --color-on-primary-container: #554300;
+
+  --color-secondary: #e7c35a;
+  --color-secondary-container: #896c00;
+  --color-secondary-fixed: #ffe08b;
+  --color-secondary-fixed-dim: #e7c35a;
+  --color-on-secondary: #3d2f00;
+  --color-on-secondary-container: #fff3dc;
+
+  --color-tertiary: #f7c852;
+  --color-tertiary-container: #d9ad39;
+  --color-on-tertiary: #3e2e00;
+
+  --color-surface: #101419;
+  --color-surface-dim: #101419;
+  --color-surface-bright: #36393f;
+  --color-surface-container-lowest: #0a0e13;
+  --color-surface-container-low: #181c21;
+  --color-surface-container: #1c2025;
+  --color-surface-container-high: #262a30;
+  --color-surface-container-highest: #31353b;
+
+  --color-on-surface: #e0e2ea;
+  --color-on-surface-variant: #d0c5af;
+  --color-outline: #99907c;
+  --color-outline-variant: #4d4635;
+
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-headline-lg: "Playfair Display", Georgia, serif;
+  --font-headline-md: "Playfair Display", Georgia, serif;
+  --font-headline-sm: "Playfair Display", Georgia, serif;
+  --font-display-hero: "Playfair Display", Georgia, serif;
+  --font-body-xl: "Plus Jakarta Sans", sans-serif;
+  --font-body-md: "Plus Jakarta Sans", sans-serif;
+  --font-body-sm: "Plus Jakarta Sans", sans-serif;
+  --font-label-caps: "Plus Jakarta Sans", sans-serif;
+  --font-label-md: "Plus Jakarta Sans", sans-serif;
+  --font-meta-numeric: "Plus Jakarta Sans", sans-serif;
+
+  --spacing-margin: 1.25rem;
+  --spacing-margin-tablet: 2.5rem;
+  --spacing-margin-desktop: 5rem;
+  --spacing-gutter: 1.5rem;
+  --spacing-gutter-desktop: 2.5rem;
+  --spacing-space-2xs: 0.25rem;
+  --spacing-space-xs: 0.5rem;
+  --spacing-space-sm: 0.75rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-space-xl: 2.5rem;
+  --spacing-space-2xl: 4rem;
+  --spacing-space-3xl: 6rem;
+}
+
+/* Custom Typography Utility Classes matching template design tokens */
+.font-display-hero {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+.font-headline-lg {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+.font-headline-md {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+.font-headline-sm {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+.font-label-caps {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 16px;
+}
+.font-label-md {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+}
+.font-meta-numeric {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+  font-size: 14px;
+}
+.font-body-xl {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: 0.01em;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+}
+.font-body-md {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+}
+.font-body-sm {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+/* Scrollbar polish */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #101419;
+}
+::-webkit-scrollbar-thumb {
+  background: #262a30;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #101419;
+  color: #e0e2ea;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
